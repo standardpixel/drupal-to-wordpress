@@ -16,7 +16,7 @@
   { 
     "type" : "git", 
     "url" : "https://github.com/standardpixel/drupal-to-wordpress"
-  }
+  },
   "author": "evg@stamen.com",
   "license": "ISC",
   "dependencies": {
