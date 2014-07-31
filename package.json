@@ -1,0 +1,26 @@
+{
+  "name": "drupal-to-wordpress",
+  "version": "0.0.0",
+  "description": "Exports a drupal site to a wordpress XML file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "drupal",
+    "wordpress",
+    "export",
+    "xml"
+  ],
+  "author": "evg@stamen.com",
+  "license": "ISC",
+  "dependencies": {
+    "cli": "~0.6.3",
+    "colors": "~0.6.2",
+    "mysql": "~2.4.1",
+    "handlebars": "~2.0.0-alpha.4",
+    "moment": "~2.7.0",
+    "html-md": "~3.0.2",
+    "html-entities": "~1.0.10"
+  }
+}

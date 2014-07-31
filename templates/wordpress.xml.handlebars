@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
+  <channel>
+    <title>{{drupal.site_name}}</title>
+    <link>{{config.link}}</link>
+    <pubDate>{{date}}</pubDate>
+    <description />
+    <language>{{config.language}}</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:author>
+    {{#each drupal.users}}
+      <wp:author_id>{{uid}}</wp:author_id>
+      <wp:author_login>{{mail}}</wp:author_login>
+      <wp:author_email>{{mail}}</wp:author_email>
+      <wp:author_display_name><![CDATA[{{name}}]]></wp:author_display_name>
+      <wp:author_first_name><![CDATA[]]></wp:author_first_name>
+      <wp:author_last_name><![CDATA[]]></wp:author_last_name>
+    {{/each}}
+    </wp:author>
+    {{#each drupal.pages}}
+    <item>
+      <link>{{url_alias}}</link>
+      <title>{{title}}</title>
+      <pubDate>{{created}}</pubDate>
+      <content:encoded><![CDATA[{{{body}}}]]></content:encoded>
+      <wp:post_name></wp:post_name>
+      <wp:post_type>{{type}}</wp:post_type>
+      <wp:post_id>{{nid}}</wp:post_id>
+      <wp:status>{{#if status}}publish{{else}}draft{{/if}}</wp:status>
+    </item>
+    {{/each}}
+    {{#each drupal.blogs}}
+    <item>
+      <title>{{title}}</title>
+      <link>{{url_alias}}</link>
+
+      <content:encoded><![CDATA[{{{body}}}]]></content:encoded>
+      <excerpt:encoded />
+      <wp:post_name></wp:post_name>
+      <wp:post_type>{{type}}</wp:post_type>
+      <wp:post_id>{{nid}}</wp:post_id>
+      <wp:status>{{#if status}}publish{{else}}draft{{/if}}</wp:status>
+      <pubDate>{{created}}</pubDate>
+      <wp:post_date>2014-07-24 24:08:43</wp:post_date>
+      <wp:post_date_gmt>2014-07-24 24:08:43</wp:post_date_gmt>
+      <dc:creator>evg@stamen.com</dc:creator>
+      <wp:comment_status>closed</wp:comment_status>
+    </item>
+    {{/each}}
+  </channel>
+</rss>
+

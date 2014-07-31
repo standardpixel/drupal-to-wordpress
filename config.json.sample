@@ -1,0 +1,9 @@
+{
+  "link"     : "http://stamen.com",
+  "language" : "en-US",
+  "mysql"    : {
+    "host"     : "localhost",
+    "user"     : "root",
+    "database" : "stamencom"
+  }
+}
