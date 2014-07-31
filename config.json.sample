@@ -1,9 +1,10 @@
 {
-  "link"     : "http://stamen.com",
+  "link"     : "[drupal site domain]",
+  "author"   : "[email address]",
   "language" : "en-US",
   "mysql"    : {
     "host"     : "localhost",
     "user"     : "root",
-    "database" : "stamencom"
+    "database" : "[mysql database]"
   }
 }
